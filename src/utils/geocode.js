@@ -8,7 +8,7 @@ const geocode = (address, callback) => {
         }
         else if (body.features.length === 0) {
             console.log(body.features)
-            callback("Can't find the location. Try another", undefined)
+            callback("Can't find the location. Try another location", undefined)
         }
         else {
             callback(undefined, {
