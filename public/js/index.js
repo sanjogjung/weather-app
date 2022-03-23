@@ -7,7 +7,6 @@ weatherForm.addEventListener("submit", (e) => {
     messageOne.classList.remove('error')
     e.preventDefault() // prevent form from rendering page
     const location = search.value
-    // console.log(location)
     messageOne.textContent = 'LOADING....'
     messageTwo.textContent=""
     fetch(`http://localhost:3000/weather?address=${location}`).then((response)=> {
